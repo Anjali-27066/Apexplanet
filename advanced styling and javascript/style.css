@@ -1,0 +1,97 @@
+/* style.css */
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #d8c3fc 0%, #e0bbff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #4b3b65;
+}
+.quiz-container {
+  background: #faf8ff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(139, 106, 214, 0.3);
+  padding: 30px 40px;
+  max-width: 600px;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #6b4cbf;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.question {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4b3b65;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+button.option {
+  flex: 1 1 calc(33% - 10px);
+  background-color: #d6c9f8;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #4b3b65;
+  box-shadow: 0 2px 6px rgba(107, 76, 191, 0.25);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  user-select: none;
+}
+button.option:hover {
+  background-color: #a890f7;
+  color: white;
+  box-shadow: 0 6px 12px rgba(107, 76, 191, 0.5);
+}
+button.option.correct {
+  background-color: #8f7aff;
+  color: white;
+  box-shadow: 0 4px 10px rgba(143, 122, 255, 0.7);
+  cursor: default;
+}
+button.option.wrong {
+  background-color: #e29b9b;
+  color: white;
+  box-shadow: 0 4px 10px rgba(226, 155, 155, 0.7);
+  cursor: default;
+}
+button.option.selected {
+  background-color: #6b4cbf; 
+  color: white;
+  box-shadow: 0 6px 12px rgba(107, 76, 191, 0.7);
+}
+.submit-btn {
+  display: block;
+  margin: 30px auto 0;
+  background-color: #6b4cbf;
+  color: white;
+  font-weight: 700;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(107, 76, 191, 0.5);
+  transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+  background-color: #573ca3;
+}
+#score {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: black;
+}

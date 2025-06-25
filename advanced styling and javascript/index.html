@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Dev Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz</h1>
+    <form id="quizForm">
+      <div class="question">
+        <p>1. What does JavaScript primarily do in web development?</p>
+        <div class="options">
+          <button type="button" class="option" data-question="0" data-value="Adds interactivity">Adds interactivity</button>
+          <button type="button" class="option" data-question="0" data-value="Defines structure">Defines structure</button>
+          <button type="button" class="option" data-question="0" data-value="Applies styling">Applies styling</button>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>2. Which HTML tag is used to display an image?</p>
+        <div class="options">
+          <button type="button" class="option" data-question="1" data-value="&lt;img&gt;">&lt;img&gt;</button>
+          <button type="button" class="option" data-question="1" data-value="&lt;image&gt;">&lt;image&gt;</button>
+          <button type="button" class="option" data-question="1" data-value="&lt;src&gt;">&lt;src&gt;</button>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>3. What is the correct way to link a CSS file to HTML?</p>
+        <div class="options">
+          <button type="button" class="option" data-question="2" data-value="&lt;link rel='stylesheet' href='style.css'&gt;">&lt;link rel='stylesheet' href='style.css'&gt;</button>
+          <button type="button" class="option" data-question="2" data-value="&lt;style src='style.css'&gt;">&lt;style src='style.css'&gt;</button>
+          <button type="button" class="option" data-question="2" data-value="&lt;css href='style.css'&gt;">&lt;css href='style.css'&gt;</button>
+        </div>
+      </div>
+
+      <p id="score"></p>
+      <button type="submit" class="submit-btn">Submit Quiz</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
