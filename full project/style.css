@@ -1,0 +1,193 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+header {
+  background: #0077cc;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 {
+  margin: 0;
+}
+nav {
+  margin-top: 0.5rem;
+}
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background: white;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+  border-bottom: 3px solid #0077cc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* About */
+#about p {
+  max-width: 600px;
+}
+
+/* To-Do List */
+#todo-list {
+  max-width: 500px;
+}
+#todo-list input[type="text"] {
+  padding: 0.5rem;
+  width: 70%;
+  font-size: 1rem;
+}
+#todo-list button {
+  padding: 0.5rem 1rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#todo-list button:hover {
+  background: #005fa3;
+}
+#tasks {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+#tasks li {
+  background: #e9ecef;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+#tasks li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+#tasks li button {
+  background: #dc3545;
+  border: none;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#tasks li button:hover {
+  background: #a71d2a;
+}
+
+/* Product Page */
+#products {
+  max-width: 900px;
+}
+.filters {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.filters label {
+  font-weight: 600;
+}
+.filters select {
+  padding: 0.3rem;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  gap: 1rem;
+}
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-card h4 {
+  margin: 0 0 0.5rem 0;
+}
+.product-card p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+.product-card .price {
+  font-weight: bold;
+  color: #0077cc;
+}
+
+/* Contact */
+#contact form {
+  max-width: 500px;
+}
+#contact label {
+  display: block;
+  margin: 0.7rem 0 0.3rem 0;
+  font-weight: 600;
+}
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+#contact button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #0077cc;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#contact button:hover {
+  background: #005fa3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .filters {
+    flex-direction: column;
+  }
+}
+

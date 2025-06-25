@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate developer eager to build beautiful and functional web applications. I enjoy working on interactive projects and always look to improve my skills.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <!-- To-Do List Project -->
+    <article id="todo-list">
+      <h3>To-Do List App (with localStorage)</h3>
+      <input type="text" id="new-task" placeholder="Add a new task..." />
+      <button id="add-task-btn">Add Task</button>
+      <ul id="tasks"></ul>
+    </article>
+
+    <hr />
+
+    <!-- Product Filter & Sort Project -->
+    <article id="product-page">
+      <h3>Product Page with Filter & Sort</h3>
+      <div class="filters">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter">
+          <option value="all">All</option>
+        </select>
+
+        <label for="price-filter">Filter by Price:</label>
+        <select id="price-filter">
+          <option value="all">All</option>
+          <option value="under50">Under $50</option>
+          <option value="50to100">$50 - $100</option>
+          <option value="above100">Above $100</option>
+        </select>
+
+        <label for="sort-by">Sort by:</label>
+        <select id="sort-by">
+          <option value="none">None</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating-desc">Rating: High to Low</option>
+          <option value="rating-asc">Rating: Low to High</option>
+        </select>
+      </div>
+
+      <div class="product-list" id="product-list">
+        <!-- Products injected here -->
+      </div>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
